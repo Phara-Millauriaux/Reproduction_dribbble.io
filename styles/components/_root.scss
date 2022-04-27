@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+
+$ico-size: 2.5vh;
+$primary: #f5c343;
+$white: #f8f8f8;
+$black: #1d1d1d;
+$nav-links: #c6c7c9;
+@mixin fullscreen-Grid {
+  //un petit paquet de commande
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  height: 100vh;
+  width: 100vw;
+}
+.quote {
+  &::after {
+    content: '"';
+  }
+  &::before {
+    content: '"';
+  }
+}
+
+*,
+*::after,
+*::before {
+  padding: 0; //bordure interirieure
+  margin: 0; //bordure exterieurer
+  box-sizing: border-box; //la bordure conténaire plutot que le contenu
+  transition: 300ms ease-in-out;
+  overflow-x: hidden;
+  overflow-x: hidden;
+}
+:root {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+
+.bold {
+  font-weight: 600;
+}
+.svg-ico {
+  height: $ico-size;
+  width: $ico-size;
+}
+h1 {
+  font-size: 5vh;
+  font-weight: 600;
+}
+h2 {
+  font-size: 4vh;
+}
+.links {
+  color: $nav-links;
+  text-decoration: none;
+}

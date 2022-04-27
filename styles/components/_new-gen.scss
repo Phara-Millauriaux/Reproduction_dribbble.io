@@ -1,0 +1,49 @@
+#new-gen {
+  background-color: $black;
+  color: $white;
+  @include fullscreen-Grid;
+  .product {
+    grid-column: 13/17;
+    height: 80vh;
+    grid-row: 2/7;
+  }
+  .stats-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    grid-column: 8/11;
+    grid-row: 3/6;
+
+    .number {
+      font-size: 4vh;
+      color: $primary;
+    }
+  }
+  .main-txt {
+    grid-column: 2/6;
+    grid-row: 2/9;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-evenly;
+    .new {
+      font-size: 1.25rem;
+      text-transform: uppercase;
+    }
+    .profile {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+    }
+    .pfp {
+      border-radius: 60%;
+      height: 5vh;
+      width: 5vh;
+      margin: 1vh;
+    }
+    .quote {
+      color: $nav-links;
+    }
+  }
+}

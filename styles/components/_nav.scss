@@ -1,0 +1,48 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  height: 10vh;
+  left: 0;
+  margin: 0 2.5vw;
+  padding-top: 2vh; //pt2vh (raccourci)
+  position: absolute;
+  top: 0;
+  width: 95vw;
+  z-index: 2;
+
+  .logo,
+  .icons,
+  .social-links {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+  }
+  .icons,
+  .social-links {
+    justify-content: flex-end;
+  }
+  .icons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    img {
+      margin: 0 1.5vw;
+    }
+  }
+  .social-links {
+    a {
+      color: $nav-links;
+      text-decoration: none;
+      &:first-child {
+        margin-right: 2vw;
+      }
+    }
+  }
+  .logo {
+    justify-content: flex-start;
+    font-size: 3.5vh;
+    font-weight: 800;
+    margin-left: 2vw;
+  }
+}
